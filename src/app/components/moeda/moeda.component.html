@@ -1,0 +1,16 @@
+<div class="moeda">
+  <h1>Quantos Reais você quer converter? </h1>
+<input type="number" id="Real" [(ngModel)]="Real"> <br>
+<button (click)="calcularSoma()" class="Calcular">Calcular</button>
+<br>
+<h2>R$ <span>{{ Real }}</span></h2>
+<h5>Dolar: <span>{{Dolar | currency}}</span></h5>
+<h5>Bath: <span>{{Bath | currency}}</span></h5>
+<h5>Yuan: <span>{{Yuan | currency}}</span></h5>
+<h5>Lek: <span>{{Lek | currency}}</span></h5>
+<h5>Russo: <span>{{Russo | currency}}</span></h5>
+<h5>Somoni: <span>{{Somoni | currency}}</span></h5>
+<h5>Uzbeque: <span>{{Uzbeque | currency}}</span></h5>
+<h5>Argentino: <span>{{Argentino | currency}}</span></h5>
+<h5>Kwanza: <span>{{Kwanza | currency}}</span></h5>
+</div>

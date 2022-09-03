@@ -1,0 +1,41 @@
+.moeda{
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+  height: 50em;
+  overflow: auto;
+}
+.moeda::-webkit-scrollbar{
+  width: 0px;
+}
+h1{
+  color: gold;
+  text-shadow: 1px 1px 3px yellow;
+  font-size: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#Real{
+  border: 1px solid rebeccapurple;
+  width: 20em;
+  height: 2em;
+  margin-top: 10px;
+}
+.Calcular{
+  border: 1px solid purple;
+  width: 10em;
+  height: 2em;
+  color: white;
+  margin-top: 15px;
+  cursor: pointer;
+  border-radius: 20px;
+  background: purple;
+}
+h5{
+  font-size: 30px;
+  margin-top: 10px;
+}
+h5 > span,h2 > span{
+  color: greenyellow;
+  font-size: 35px;
+}

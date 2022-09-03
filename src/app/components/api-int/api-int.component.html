@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="Corpo">
+    <div class="card-body">
+      <table id="Table">
+          <tbody>
+            <tr *ngFor="let car of cars">
+              <div  class="Album">
+              <td><img id="image" src={{car.imagem}} alt=""></td>
+              <br>
+              <td id="Titulo">{{car.model}}</td>
+              <br>
+              <td>
+                <audio id="music" controls controlsList="nodownload noplaybackrate" src={{car.color}}  type="audio/ogg"></audio>
+              </td>
+              <br>
+              <td id="tdDelet">
+                <button type="button" id="Delet" class="btn btn-danger btn-sm ml-1" (click)="deleteCar(car)">Deletar</button>
+              </td>
+            </div>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+  </div>
+  <div class="Adicionar">
+      <h5 class="card-header">Adicionar uma música</h5>
+      <div class="card-body">
+          <form id="add-form" (ngSubmit)="f.form.valid && saveCar(f)" #f="ngForm" novalidate>
+            <div class="form-group">
+                <input type="text" [(ngModel)]="car.model" id="Input" name="Nome" #model="ngModel" required class="form-control" [ngClass]="{ 'is-invalid': f.submitted && model.invalid }" placeholder="Digite o Nome">
+            </div>
+            <div class="form-group">
+                <input type="text" [(ngModel)]="car.color" id="Input" name="Music" #color="ngModel" required class="form-control" [ngClass]="{ 'is-invalid': f.submitted && color.invalid }" placeholder="Digite a Music">
+            </div>
+            <div class="form-group">
+              <input type="text" [(ngModel)]="car.imagem" id="Input" name="imagem" #imagem="ngModel" required class="form-control" [ngClass]="{ 'is-invalid': f.submitted && imagem.invalid }" placeholder="Digite a imagem">
+          </div>
+            <button type="submit" class="btn btn-primary btn-add-car" id="but">Salvar</button>
+            <button type="reset" class="btn btn-secondary btn-add-car" id="but" (click)="cleanForm(f)">Cancelar</button>
+          </form>
+      </div>
+    </div>
+</div>

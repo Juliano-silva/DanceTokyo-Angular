@@ -1,0 +1,17 @@
+<div class="Tela">
+<img
+src="https://www.revistaplaneta.com.br/wp-content/uploads/sites/3/2019/02/nuvem-stratocumulus.jpg" alt="" id="img" >
+<div id="divWeatherMain">
+  <div class="weatherWidgetRow"><h1 id="Tempo">
+    {{WeatherData.temp_celcius}}°C
+  </h1></div>
+  <div class="Variações">
+  <div class="weatherWidgetRow">Variantes de {{WeatherData.temp_min}}° / {{WeatherData.temp_max}}°</div>
+  <div class="weatherWidgetRow">Aparecia: {{WeatherData.temp_feels_like}}°</div>
+  <div class="weatherWidgetRow">{{WeatherData.name}}</div>
+  <div class="weatherWidgetRow">Umidade: {{WeatherData.main.humidity}}%</div>
+  <div id="Date">Data:{{WeatherData.DataFull}}</div>
+  <div id="Hora">Hora:{{WeatherData.Hour}}</div>
+</div>
+</div>
+</div>

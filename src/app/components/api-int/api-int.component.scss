@@ -1,0 +1,109 @@
+audio{
+  border-radius: 10px;
+  background: white;
+  width: 30em;
+  height: 2em;
+}
+audio::-webkit-media-controls-panel {
+  background: white;
+  color: transparent;
+}
+audio::-webkit-media-controls-play-button{
+  background-image: url(../../../Arquivo/Play.ico);
+  border-radius: 20px;
+}
+audio::-webkit-media-controls-current-time-display,audio::-webkit-media-controls-time-remaining-display,
+audio::-webkit-media-controls-seek-back-button,
+audio::-webkit-media-controls-seek-forward-button,
+audio::-webkit-media-controls-fullscreen-button,
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-toggle-closed-captions-button,
+audio::-webkit-media-controls-return-to-realtime-button,
+audio::-webkit-media-controls-rewind-button
+{
+  display: none;
+}
+.Album{
+  margin-top: 20px;
+  border: 2px solid greenyellow;
+  width: 30em;
+  height: 30em;
+  background-image: url(../../../Arquivo/D6XS.gif);
+}
+#Table{
+  border: 1px solid transparent;
+  margin: auto;
+  margin-top: 20px;
+}
+.Corpo{
+  border: 1px solid transparent;
+  height: 60em;
+  overflow: auto;
+}
+.Corpo::-webkit-scrollbar{
+  width: 0px;
+}
+#image{
+  border: 1px solid white;
+  width: 29.6em;
+  height: 20em;
+}
+#Titulo{
+  display: block;
+  font-size: 50px;
+  margin-top: -20px;
+  text-align: center;
+}
+#tdDelet{
+  border: 1px solid transparent;
+  width: 30em;
+}
+#Delet{
+  background: purple;
+  margin: auto;
+  display: block;
+  color: white;
+  font-size: 20px;
+  border: 1px solid greenyellow;
+  margin-top: -20px;
+  width: 10em;
+  border-radius: 20px;
+}
+.Adicionar{
+  border: 1px solid greenyellow;
+  background-image: url(../../../Arquivo/D6XS.gif);
+  background-size: contain;
+  text-align: center;
+  border-radius: 20px 20px 0 0 ;
+  height: 20em;
+}
+#Input{
+  border: 2px solid transparent;
+  border-radius: 20px;
+  width: 80%;
+  height: 2em;
+  margin-top: 10px;
+  text-align: center;
+  border-bottom: 3px solid white;
+  color: white;
+  background: transparent;
+}
+.card-header{
+  border: 1px solid transparent;
+  margin-top: 20px;
+  font-size: 30px;
+  color: green;
+  text-shadow: 2px 2px 2px greenyellow;
+}
+#but{
+  border: 1px solid white;
+  width: 20em;
+  margin-top: 20px;
+  background: purple;
+  color: greenyellow;
+  height: 2em;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor:pointer;
+}
